@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Update character count
   fromText.addEventListener("input", () => {
-    countValue.textContent = `${fromText.value.length}/1,000`;
+    countValue.textContent = `${fromText.value.length}/5,000`;
   });
 
   // Translate text when clicking the button
