@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    background: #fff;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.boxo{
+    /* display:none; */
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+ /* @media (max-width: 768px) {
+      .boxo {
+        display: block;
+      }
+} */
+
+.translator_property{
+    border: 1px solid rgba(35, 84, 148, 0.514);
+}
+.translator_property .nuv_item{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    border-bottom: 1px solid #c7c7c7;
+    padding: 0 20px;
+}
+.translator_property .nuv_item li select{
+    outline: none;
+    border-style: none;
+    padding: 10px 0;
+    font-size: 17px;
+    font-weight: 500;
+    color: #606060;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.translator_property .nuv_item li select:hover{
+    color: #111;
+}
+.exchange{
+    font-size: 22px;
+    color: #606060;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.exchange:hover{
+    color: #111;
+}
+.write_box{
+    display: flex;
+
+}
+.rowo{
+    width: 100%;
+    position: relative;
+}
+.write_box textarea{
+    width: 100%;
+    height: 250px;
+    border-style: none;
+    outline: none;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #606060;
+    position: relative;
+}
+.write_box textarea:nth-child(1){
+    border-right: 1px solid #c7c7c7;
+}
+.write_box .btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.bx{   
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    border-radius: 50px;
+}
+
+.toSpeakIcon{
+    background: #000;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    border-radius: 50px;
+}
+.toSpeakIcon .fa-volume-high{
+    font-size: 20px;
+    color: #fff;
+}
+.toSpeakIcon:hover{
+     background: #160095;
+     border: 2px solid #160095;
+     color: #fff;
+}
+.bx:hover{
+    background: #160095;
+    border: 2px solid #160095;
+    color: white;
+}
+.code_length{
+    font-size: 18px;
+    color: #606060;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    overflow-x: auto;
+}
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.nav__link:hover {
+    background-color: #eeeeee;
+}
+
+.nav__link--active {
+    color: #160095;
+}
+
+.nav__icon {
+    font-size: 25px;
+}
+ 
+.translate-btn {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #160095;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.translate-btn:hover {
+    background-color: #0d0078;
+}
+.myb{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    /* position: relative;
+    height: 100px; */
+}
+

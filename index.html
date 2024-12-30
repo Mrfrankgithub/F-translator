@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+    <link rel="manifest" href="/manifest.json">
+    <title>Currency Converter</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <header>Currency Converter</header> -->
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" name="display" value="1" readonly>
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon"><i class=" fa-solid fa-right-left transfer"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="https://flagsapi.com/NG/flat/64.png">
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange-rate">Exchange rate loading...</div>
+            <div class="buttons">
+                <button type="button" class="num-btn" onclick="display.value += '1' ">1</button>
+                <button type="button" class="num-btn" value="2" onclick="display.value += '2' ">2</button>
+                <button type="button" class="num-btn" value="3" onclick="display.value += '3' ">3</button>
+                <button type="button" class="num-btn" value="4" onclick="display.value += '4' ">4</button>
+                <button type="button" class="num-btn" value="5" onclick="display.value += '5' ">5</button>
+                <button type="button" class="num-btn" value="6" onclick="display.value += '6' ">6</button>
+                <button type="button" class="num-btn" value="7" onclick="display.value += '7' ">7</button>
+                <button type="button" class="num-btn" value="8" onclick="display.value += '8' ">8</button>
+                <button type="button" class="num-btn" value="9" onclick="display.value += '9' ">9</button>
+                <button type="button" class="num-btn" value="0" onclick="display.value += '0' ">0</button>
+                <button type="button" class="num-btn" value="." onclick="display.value += '.' ">.</button>
+                <button type="button" class="num-btn" id="del" value="DE"
+                    onclick="display.value = display.value.toString().slice(0,-1)">DE</button>
+                <button type="button" class="num-btn" value="00" onclick="display.value += '00' ">00</button>
+                <button type="button" class="num-btn" onclick="display.value = '' " id="clear">C</button>
+            </div>
+            <button class="buttonGet">Get Exchange Rate</button>
+        </form>
+
+       
+    </div>
+
+    <nav class="nav">
+        <a href="./weather.html" class="nav__link">
+            <i class="fa-solid fa-cloud-moon-rain nav__icon"></i>
+            <span class="nav__text">Check Weather</span>
+        </a>
+        <a href="./main.html" class="nav__link nav__link--active">
+            <i class="fa-solid fa-language nav__icon"></i>
+            <span class="nav__text">Translator</span>
+        </a>
+    </nav>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="./converter/country-list.js"></script>
+    <script src="./converter/script.js"></script>
+</body>
+
+</html>

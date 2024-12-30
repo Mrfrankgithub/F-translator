@@ -1,0 +1,43 @@
+{
+    "name": "F-Translator App",
+    "short_name": "F-3-in-1 App",
+    "start_url": "/main.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#6200ea",
+    "icons": [
+      {
+        "src": "/icons/icon1.jpeg", 
+        "sizes": "512x512", 
+        "type": "image/jpeg", 
+        "purpose": "any maskable"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "/icons/screenshotwide.png",
+        "sizes": "1280x720",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/icons/screenshotph1.png",
+        "sizes": "320x320",
+        "type": "image/png",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/icons/screenshotph2.png",
+        "sizes": "320x320",
+        "type": "image/png",
+        "form_factor": "narrow"
+      },
+      {
+        "src": "/icons/screenshotph3.png",
+        "sizes": "203x449",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ]
+  }
+  

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="./toastr.min.css" />
+    <title>Frank Translator & Converter</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="boxo">
+      <div class="translator_property">
+        <ul class="nuv_item">
+          <li>
+            <select class="from-lang"></select>
+          </li>
+          <div class="exchange">
+            <i class="transfer fa-solid fa-right-left"></i>
+          </div>
+          <li>
+            <select class="to-lang"></select>
+          </li>
+        </ul>
+        <div class="write_box">
+          <div class="rowo from">
+            <textarea
+              maxlength="5000"
+              class="from-text"
+              placeholder="Write down"
+            ></textarea>
+            <div class="btn">
+              <button id="copy-from" class="bx" title="Copy">Copy</button>
+              <div class="code_length">0/1,000</div>
+            </div>
+          </div>
+          <div class="rowo to">
+            <textarea
+              class="to-text"
+              disabled
+              placeholder="Translation will appear here..."
+            ></textarea>
+            <div class="btn">
+              <button id="copy-to" class="bx" title="Copy">Copy</button>
+              <button class="toSpeakIcon" title="Speak">
+                <i class="fa-solid fa-volume-high"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="myb">
+        <button class="translate-btn">Translate</button>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="./weather.html" class="nav__link">
+        <i class="fa-solid fa-cloud-moon-rain nav__icon"></i>
+        <span class="nav__text">Check Weather</span>
+      </a>
+      <a href="./index.html" class="nav__link nav__link--active">
+        <i class="fa-solid fa-rotate nav__icon"></i>
+        <span class="nav__text">Converter</span>
+      </a>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <script src="./translator/language.js"></script>
+    <script src="./translator/main.js"></script>
+    <script src="./jquery.min.js"></script>
+    <script src="./toastr.min.js"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .then(() => {
+            console.log("Service Worker Registered");
+          })
+          .catch((error) => {
+            console.log("Service Worker Registration Failed:", error);
+          });
+      }
+    </script>
+  </body>
+</html>

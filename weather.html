@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' rel='stylesheet'>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="./weather.css">
+    <title>Weather web</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="search">
+            <!-- <h2>Weather App</h2> -->
+            <input type="text" placeholder="Enter City">
+            <button><img src="./weatherImages/search.jpg" alt="weather"></button>
+        </div>
+        <div class="error">
+            <h3><span style="color: red;">Invalid</span> City Name</h3>
+        </div>
+        <div class="weather">
+            <img src="./weatherImages/new.jpg" class="icon" alt="">
+            <h1 class="celcius">0°C°F</h1>
+            <h2 class="city">Searching....</h2>
+            <div class="detail">
+                <div class="col">
+                    <i class="fa-solid fa-water yep"></i>
+                    <div class="humidity">
+                        <p class="humidityP">0%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind yep"></i>
+                    <div class="wind">
+                        <p class="windS">0k/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="nav">
+        <a href="./main.html" class="nav__link">
+            <i class="fa-solid fa-language nav__icon"></i>
+            <span class="nav__text">Translator</span>
+        </a>
+        <a href="./index.html" class="nav__link nav__link--active">
+            <i class="fa-solid fa-rotate nav__icon"></i>
+            <span class="nav__text">Converter</span>
+        </a>
+    </nav>
+
+    <script src="./weather/weather.js"></script>
+</body>
+
+</html>
